@@ -1,0 +1,186 @@
+/*   EX.1  */
+*{box-sizing:border-box;}
+
+div.ex1{
+width: 40%;    
+font-size: 18px;
+font-weight: 800;       
+color:white;
+}
+div.ex1*:not(.row){
+  float:left;
+  padding: 2px;  
+}
+/*用以控制當%改變使得box往上補*/
+div.ex1 .row{
+clear: left;
+}
+.header{
+  width:100%;
+  height: 60px;     
+  background:lightblue;
+  text-align: center;
+  line-height:60px;
+}
+.nav{
+  float: left;    
+  width:100%;
+  height: 40px;  
+  background:yellow;
+  text-align: center;
+  line-height:40px; 
+}
+.sidebar{
+  float: left;
+  width:25%;
+  height: 250px;  
+  background:green;
+  text-align: center;
+  line-height:250px;
+}
+.main{
+  float: left;
+  width:75%;
+  height: 250px;
+  background:blue;
+  text-align: center;
+  line-height:250px;
+}
+.footer{
+  width:100%;
+  height: 40px;    
+  background:orange;
+  text-align: center;
+  line-height:40px;
+}
+
+
+
+/*EX.2*/
+*{box-sizing:border-box;}  /*不受內容長短而寬度不同之限制*/
+div.ex2{
+    width: 40%;
+}
+ul{
+    font-size: 16px;
+    font-weight: 500;
+}
+.store>li{
+    display: inline-block;
+    width: 100px;
+/*    作為子階.submenu定位使用*/
+    position: relative;  
+    border: 1px solid #ddd;
+    border-radius: 8%;
+    border-right: 0px;   /*清除右側boder*/
+    padding .1em 1em;
+    margin-left: -4px;
+    /*cursor-游標可以變成pointer*/
+    cursor: pointer;
+    background: green;
+    color: floralwhite;
+    font-weight: 600;
+}
+/*對於.nav>li最右側box再增加其右邊boder*/
+.store>li:last-child{
+  border-right: 1px solid #ddd;   
+}
+.submenu{
+    width: 100%;
+    padding: 0px;
+    /*以其父階位置定位屬性之定位點進行絕對位置調整*/
+    position: absolute;  
+    top:100%;
+    left: -1px;
+    background: white;
+    color: dimgray;
+    /*去除list標號*/
+    list-style: none;     
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    /*隱藏*/
+    display: none;
+}
+.store>li:hover .submenu{
+    display: block;
+}
+.submenu.li{
+   padding: .5em 15px; 
+}
+.submenu li:hover {
+    background: darkkhaki; 
+    color: white;
+}
+
+
+
+/*EX.3*/
+*{box-sizing:border-box;}
+.ex3{
+height:200px;  
+}    
+.botton{
+width: 40px;
+height:40px;
+border-radius: 50%;
+background: red;
+margin: 0px;   
+position: fixed; 
+bottom:0;
+right:0;
+color:white; 
+font-size: 24px;
+font-weight: 800;
+text-align: center;
+line-height: 40px;
+}
+
+
+
+/*CSS diner*/
+*{box-sizing:border-box;}
+figure{
+width: 600px;
+height: 500px;
+border: 4px solid #9c9;
+background: url("CSSDiner.jpg");
+background-size: cover;
+margin: 0em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
